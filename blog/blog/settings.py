@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sblog'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -78,6 +79,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'data/db.sqlite3'),
+	'USER':'',
+	'PASSWORD':'',
+	'HOST':'',
+	'PORT':'',
     }
 }
 
