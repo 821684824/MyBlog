@@ -33,3 +33,5 @@ class Blog(models.Model):
 
     def __unicode__(self):
         return u'%s %s %s' % (self.caption, self.author, self.publish_time)
+    class Meta:
+        ordering = ['-publish_time']
